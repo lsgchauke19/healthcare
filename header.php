@@ -2,7 +2,7 @@
 <html>    
 <!-- the head section -->
 <head>
-    <title>Alt Health Care</title>
+    <title>LSG</title>
     
 </head>
 
