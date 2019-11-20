@@ -11,7 +11,7 @@
 	
 	<h1>ALT HEALTH CARE</>
 		<h3>Patient Login</h3>
-			<form action="." method="post">
+			<form action="appointment.php" method="post">
 		
 		<fieldset>
 			<legend>Please login</legend>

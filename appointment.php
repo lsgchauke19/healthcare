@@ -2,7 +2,7 @@
 	<html>
 		<head>
 			<title>Appointment Booking</title>
-				<link rel="stylesheet" type="type/css" href="main.css" />
+				<link rel="stylesheet" type="text/css" href="main.css" />
 		</head>
 <main>
 	<h1>Appointment Booking</h1>
@@ -20,14 +20,34 @@
 					<label>Phone Number</label>
 					<input type="text" name="phone" value="<?php echo htmlspecialchars($phone);?>">
 					<?php echo $fields->getField('phone')->getHTML();?><br>
-			
+					
+					<label>E-mail</label>
+					<input type="text" name="email" value="<?php echo htmlspecialchars($email);?>">
+					<?php echo $fields->getField('email')->getHTML();?><br>
+					
+					<label>Appointment Date</label>
+					<input type="text" name="date" value="<?php echo htmlspecialchars($date);?>">
+					<?php echo $fields->getField('date')->getHTML();?><br>
+					
+					</fieldset>
+					
+					<p>Comments</p>
+					<textarea name="comments" rows="4" cols="50"></textarea>
+					
+					
+					<fieldset>
+					<legend>Appointment Submission</legend>
+					<label>&nbsp;</label>
+					<input type="submit" name="action" value="submit">
+			</fieldset>
 		
 		
 		
-		</fieldset>
+		
 
 
-
+<?php include 'fieldRegister.php';?>
+<?php include 'validate.php';?>
 
 
 </main>
